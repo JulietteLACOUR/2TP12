@@ -1,7 +1,6 @@
-def modulo(x, y) :
-   """Computes x % y recursively """
-   if int(x%y) == x%y :
-       return x%y
+def modulo(x, y):
+   if x < y:
+       return x
    else:
        return modulo(x - y, y)
 
